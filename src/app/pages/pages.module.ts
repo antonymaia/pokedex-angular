@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { RoutingModule } from './routing.module';
 
+//Modules
+import { SharedModule } from '../shared/shared.module';
+
+//Pages
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
-
-
 
 
 @NgModule({
@@ -16,7 +18,8 @@ import { DetailsComponent } from './details/details.component';
   ],
   imports: [
     CommonModule,
-    RoutingModule
+    RoutingModule,
+    SharedModule
   ]
 })
 export class PagesModule { }
